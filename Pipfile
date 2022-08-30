@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 fastapi = "*"
+setuptools-scm = "*"
+elastic = "*"
+aioredis = "==1.3.0"
 
 [dev-packages]
 
@@ -13,3 +16,6 @@ python_version = "3.8"
 
 [packages.uvicorn]
 extras = [ "standard",]
+
+[packages.elasticsearch]
+extras = [ "async",]
